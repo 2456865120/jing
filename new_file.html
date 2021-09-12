@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>惊喜盒子</title>
+		<style type="text/css">
+			.wrap{
+				position: relative;
+				position: absolute;
+				background-color: none;
+				width: 200px;
+				height: 200px;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+			}
+			.cube{
+				background-color: none;
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+				transform-style: preserve-3d;
+				transform: rotateX(-30deg)rotateY(-80deg);
+				-webkit-animation: rotate 20s infinite;
+				animation-timing-function: linear;
+			}
+			@-webkit-keyframes rotate{
+				from{transform: rotateX(0deg) rotateY(0deg);}
+				to{transform: rotateX(360deg) rotateY(360deg);}
+			}
+			.cube div{
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				opacity: 0.8;
+				transition: all.4s;
+			}
+			.pic{
+				width: 200px;
+				height: 200px;
+			}
+			.cube .out-front{
+				transform: rotateY(0deg) translateZ(100px);
+			}
+			.cube .out-back{
+				transform: translateZ(-100px) rotateY(180deg);
+			}
+			.cube .out-left{
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			.cube .out-right{
+				transform: rotateY(-90deg) translateZ(100px);
+			}
+			.cube .out-top{
+				transform: rotateX(90deg) translateZ(100px);
+			}
+			.cube .out-bottom{
+				transform: rotateX(-90deg) translateZ(100px);
+			}
+			.cube span{
+				display: bloack;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 50px;
+				left: 50px;
+			}
+			.cube .in-pic{
+				width: 100px;
+				height: 100px;
+			}
+			.cube .in-front{
+				transform: rotateY(0deg) translateZ(50px);
+			}
+			.cube .in-back{
+				transform: translateZ(-50px) rotateY(180deg);
+			}
+			.cube .in-left{
+				transform: rotateY(90deg) translateZ(50px);
+			}
+			.cube .in-right{
+				transform: rotateY(-90deg) translateZ(50px);
+			}
+			.cube .in-top{
+				transform: rotateX(90deg) translateZ(50px);
+			}
+			.cube .in-bottom{
+				transform: rotateX(-90deg) translateZ(50px);
+			}
+			.cube:hover .out-front{
+				transform: translateZ(200px) rotateY(180deg);
+			}
+			.cube:hover .out-back{
+				transform: translateZ(-200px) rotateY(180deg);
+			}
+			.cube:hover .out-left{
+				transform: rotateY(90deg) translateZ(200px);
+			}
+			.cube:hover .out-right{
+				transform: rotateY(-90deg) translateZ(200px);
+			}
+			.cube:hover .out-top{
+				transform: rotateX(90deg) translateZ(200px);
+			}
+			.cube:hover .out-bottom{
+				transform: rotateX(-90deg) translateZ(200px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="cube">
+				<div class="out-front">
+					<img src="1629551654802.jpeg" class="pic"/>
+				</div>
+				<div class="out-left">
+					<img src="1629551730399.jpeg" class="pic"/>
+				</div>
+				<div class="out-back">
+					<img src="1629551796580.jpeg" class="pic"/>
+				</div>
+				<div class="out-right">
+					<img src="1629551815913.jpeg" class="pic"/>
+				</div>
+				<div class="out-top">
+					<img src="1629551858499.jpeg" class="pic"/>
+				</div>
+				<div class="out-bottom">
+					<img src="-2be3855447609e80.jpg" class="pic"/>
+				</div>
+				<span class="in-front">
+					<img src="3045a6b77e8235da.jpg" class="in-pic"/>
+				</span>
+				<span class="in-left">
+					<img src="6fd75b4d2c114abf.jpg" class="in-pic"/>
+				</span>
+				<span class="in-back">
+					<img src="7df32a66a47435b6.jpg" class="in-pic"/>
+				</span>
+				<span class="in-right">
+					<img src="B612Kaji_20200728_154938_088.jpg" class="in-pic"/>
+				</span>
+				<span class="in-top">
+					<img src="mmexport1602205430056.jpg" class="in-pic"/>
+				</span>
+				<span class="in-bottom">
+					<img src="1629551856034.jpeg" class="in-pic"/>
+				</span>
+			</div>
+		</div>
+	</body>
+</html>
